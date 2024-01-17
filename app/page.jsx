@@ -1,5 +1,6 @@
 import { gql } from "@apollo/client";
 import client from "@/lib/utils";
+import Link from "next/link";
 
 // UI
 import { Button } from "@/components/ui/button";
@@ -29,8 +30,9 @@ export default async function Home() {
   return (
     <main>
       <section className="m-5">
-        <div>
+        <div className="m-4">
           <h1 className="text-5xl m-5 mb-2">Hello</h1>
+          <Link href="/blog" className="bg-primary  hover:bg-primary/90 text-white font-bold py-2 px-4 rounded">GO TO blog page</Link>
           
         </div>
         <div className="grid grid-cols-3 gap-8">
