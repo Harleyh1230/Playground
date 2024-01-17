@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function Card({ data }) {
+export default async function Card({ data }) {
   return (
     <article className="mx-2 mb-4 grid grid-cols-3 gap-4">
       {data.map((item) => (
@@ -9,12 +9,12 @@ export default function Card({ data }) {
             href={{
               pathname: `/blog/${item.title.toLowerCase().replace(/\s+/g, "-")}`,
               query: {
-                title: item.title,
+                BlogId: item.id,
               },
             }}
           >
             <p>ID: {item.id}</p>
-            <h2>{item.title}</h2>
+            <h2>Title: {item.title}</h2>
           </Link>
         </div>
       ))}
