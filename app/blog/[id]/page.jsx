@@ -1,8 +1,7 @@
-import "./styles.css"
+import "./styles.css";
 import { getBlogPost } from "@/lib/utils";
 import Link from "next/link";
 import { MDXRemote } from "next-mdx-remote/rsc";
-
 
 export default async function page({ params, searchParams }) {
   console.log(params);
@@ -72,7 +71,9 @@ export default async function page({ params, searchParams }) {
       <hr />
       <div className="m-3 mb-4">
         <p className="text-3xl">MDX</p>
-        <MDXRemote source={MDX} />
+        <div className="mx-4 text-base leading-relaxed break-words">
+          <MDXRemote source={MDX} />
+        </div>
       </div>
     </>
   );
