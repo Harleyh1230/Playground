@@ -8,13 +8,12 @@ export default async function page({ params, searchParams }) {
   const id = searchParams.BlogId; // read from pathname
 
   const BlogInfo = await getBlogPost({ id });
-  console.log(BlogInfo);
 
   return (
     <>
-      <div className="flex flex-col justify-center items-center">
-        <p>{id}</p>
-        <div>Hello</div>
+      <div className="flex flex-col justify-center items-center border-solid border-2 border-red-700">
+        <div>Dev mode</div>
+        <p>Blog Id: {id}</p>
       </div>
       <div className="m-3 mb-4">
         <Link
