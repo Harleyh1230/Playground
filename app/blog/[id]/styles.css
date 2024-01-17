@@ -1,0 +1,54 @@
+/* Headings */
+h1 {
+    @apply text-3xl font-bold mt-12 mb-4; 
+  }
+  
+  h2 {
+    @apply text-2xl font-bold mt-8 mb-2;
+  }
+  
+  h3 {
+    @apply text-xl font-bold mt-6 mb-1; 
+  }
+  
+  h4 {
+    @apply text-lg font-bold mt-4 mb-1;
+  }
+  
+  /* Paragraphs */
+  p {
+    @apply mb-4;
+  }
+  
+  /* Lists */  
+  ul, ol {
+    @apply pl-6 mb-4;
+  }
+  
+  li {
+    @apply mb-2;
+  }
+  
+  /* Images */
+  img {
+    @apply max-w-full mt-4 mb-4; 
+  }
+  
+  /* Code blocks */
+  pre {
+    @apply p-4 rounded bg-gray-800 text-white overflow-x-auto;
+  }
+  
+  code {
+    @apply text-sm p-1 rounded bg-gray-900;
+  }
+  
+  /* Blockquotes */
+  blockquote {
+    @apply border-l-4 border-gray-500 pl-4 italic;
+  }
+  
+  /* Horizontal rule */  
+  hr {
+    @apply my-8 border-gray-300;
+  }

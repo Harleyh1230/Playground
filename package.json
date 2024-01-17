@@ -24,6 +24,7 @@
     "framer-motion": "^10.18.0",
     "lucide-react": "^0.309.0",
     "next": "14.0.4",
+    "next-mdx-remote": "^4.4.1",
     "react": "^18",
     "react-day-picker": "^8.10.0",
     "react-dom": "^18",
