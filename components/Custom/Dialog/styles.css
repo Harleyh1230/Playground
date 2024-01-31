@@ -1,0 +1,7 @@
+body.modal-open * {
+  animation-play-state: paused !important;
+}
+
+.modal-open * {
+  animation-play-state: paused !important;
+}
